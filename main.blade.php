@@ -390,7 +390,7 @@
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="/" class="flex items-center">
-                        <img src="@settings('logo', 'https://imgur.com/oJDxg2r.png')" class="mr-3 h-8"
+                        <img src="@settings('logo', '/assets/core/img/logo.png')" class="mr-3 h-8"
                             alt="@settings('app_name', 'WemX') Logo" />
                         <span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
                             @settings('app_name', 'WemX')

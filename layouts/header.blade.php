@@ -91,7 +91,7 @@
         <nav class="border-gray-200 bg-white px-4 py-2.5 dark:bg-gray-800 lg:px-6">
             <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
                 <a href="/" class="flex items-center">
-                    <img src="@settings('logo', 'https://imgur.com/oJDxg2r.png')" class="mr-3 h-6 sm:h-9" alt="@settings('app_name', 'WemX')" />
+                    <img src="@settings('logo', '/assets/core/img/logo.png')" class="mr-3 h-6 sm:h-9" alt="@settings('app_name', 'WemX')" />
                     <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">@settings('app_name', 'WemX')</span>
                 </a>
 
