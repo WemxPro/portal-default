@@ -3,7 +3,7 @@
 
 <head>
     <title>@settings('seo::title', 'WemX')</title>
-    <link rel="icon" href="@settings('favicon', 'https://imgur.com/oJDxg2r.png')">
+    <link rel="icon" href="@settings('favicon', '/assets/core/img/logo.png')">
 
     {{-- meta tags --}}
     <meta charset="utf-8">
@@ -291,7 +291,58 @@
                                     @continue
                                 @endif
                             @else
+<<<<<<< Updated upstream
                                 @continue
+=======
+                                {!! __('client.pricing') !!}
+                            @endif</a>
+                    </article>
+                @endforeach
+
+            </div>
+        </div>
+    </aside>
+</section>
+
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-sm text-center">
+            <h2 class="mb-4 text-4xl font-extrabold leading-tight text-gray-900 dark:text-white">{!! __('client.get_started_now') !!}</h2>
+            <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">
+                {!! __('client.register_your_account_no-time') !!}
+            </p>
+            <a href="{{ route('register') }}"
+               class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">
+                {!! __('client.create_my_account') !!}
+            </a>
+        </div>
+    </div>
+</section>
+
+@include(Theme::path('layouts.cookie'))
+
+<footer class="p-4 bg-gray-50 sm:p-6 dark:bg-gray-800">
+    <div class="mx-auto max-w-screen-xl">
+        <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="/" class="flex items-center">
+                    <img src="@settings('logo', '/assets/core/img/logo.png')" class="mr-3 h-8"
+                         alt="@settings('app_name', 'WemX') Logo"/>
+                    <span
+                        class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">@settings('app_name', 'WemX')</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{!! __('client.resources') !!}</h2>
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        @foreach(Page::getActive() as $page)
+                            @if(in_array('footer_resources', $page->placement))
+                                <li class="mb-4">
+                                    <a href="{{ route('page', $page->path) }}" @if($page->new_tab) target="_blank"
+                                       @endif class="hover:underline">{{ $page->name }}</a>
+                                </li>
+>>>>>>> Stashed changes
                             @endif
                         @endif
                         <article class="max-w-xs">
