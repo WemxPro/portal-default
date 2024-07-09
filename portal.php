@@ -10,6 +10,6 @@ return [
 
     // Below are assets for the theme
     'folder' => 'default',
-    'assets' => '/assets/themes/default/'
+    'assets' => '/assets/themes/default/',
 
 ];
