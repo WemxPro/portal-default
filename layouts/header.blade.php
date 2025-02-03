@@ -13,7 +13,7 @@
                         </span>
                     </a>
                 </div>
-                @include(Theme::path('layouts.widgets.user-dropdown'))
+                @include('layouts::widgets.user-dropdown')
             </div>
         </nav>
 

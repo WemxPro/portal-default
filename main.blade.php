@@ -25,7 +25,7 @@
         content="{{ $meta_description ?? settings('seo::description', 'Manage your orders with an easy-to-use Dashboard') }}">
     <meta property="og:image" content="@settings('seo::image', '/static/wemx.png')">
 
-    <link rel="stylesheet" href="{{ Theme::get('Default')->assets }}assets/css/custom.css">
+    <link rel="stylesheet" href="{{ theme()::assets('css/custom.css') }}">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
     @if (settings('google::analytics_code'))
@@ -332,7 +332,7 @@
         </div>
     </section>
 
-    @include(Theme::path('layouts.cookie'))
+    @include('layouts::elements.cookie')
 
     <footer class="bg-gray-50 p-4 dark:bg-gray-800 sm:p-6">
         <div class="mx-auto max-w-screen-xl">
