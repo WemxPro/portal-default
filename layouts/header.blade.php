@@ -13,7 +13,7 @@
                         </span>
                     </a>
                 </div>
-                @include('layouts::widgets.user-dropdown')
+                @include('layouts::elements.user-dropdown')
             </div>
         </nav>
 
@@ -96,7 +96,7 @@
                     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">@settings('app_name',
                         'WemX')</span>
                 </a>
-                @include(Theme::path('layouts.widgets.user-dropdown'))
+                @include(Theme::path('layouts.elements.user-dropdown'))
                 <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                     <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li>
